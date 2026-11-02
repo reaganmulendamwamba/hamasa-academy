@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171916">
+  <meta name="description" content="AMASA Academy transforme le savoir en compétences pratiques. Des livres numériques, des guides et des outils pour développer son autonomie et apprendre à entreprendre.">
+  <title>AMASA Academy — Le savoir qui vous fait avancer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#accueil" aria-label="AMASA Academy, accueil">
+      <span class="brand-mark">A</span><span>AMASA<small>ACADEMY</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Navigation principale">
+      <div class="menu-close-label">Explorer AMASA</div>
+      <a href="#academie">L'académie</a>
+      <a href="#methode">Notre approche</a>
+      <a href="#bibliotheque">Bibliothèque</a>
+      <a href="#boutique" data-open-shop>La boutique</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn" href="#contact">Parlons de votre projet <span class="arrow">↗</span></a>
+    </nav>
+  </div>
+</header>
+<div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Apprendre · Comprendre · Entreprendre</span>
+        <h1>Le savoir prend sa valeur quand on <em>passe à l'action.</em></h1>
+        <p class="hero-copy">AMASA Academy transforme des connaissances utiles en compétences pratiques. Des livres numériques, des guides et des outils pour aider chacun à avancer, développer son autonomie et apprendre à entreprendre avec les moyens dont il dispose.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#bibliotheque">Explorer les ressources <span class="arrow">→</span></a>
+          <a class="btn btn-outline" href="#academie">Découvrir l'académie</a>
+        </div>
+        <div class="hero-note"><span></span> Une initiative éducative numérique basée à Kinshasa, accessible partout.</div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image">
+          <!-- Remplacez ce bloc par une photo réelle : <img src="images/hero-amasa.jpg" alt="Apprenant travaillant sur son projet"> -->
+          <div class="image-placeholder">PHOTO PRINCIPALE<small>Un apprenant qui lit, travaille ou prépare son projet.<br>Format conseillé : portrait vertical.</small></div>
+        </div>
+        <div class="floating-card"><strong>À votre rythme.</strong><span>Des ressources pensées pour apprendre et appliquer, étape après étape.</span></div>
+        <div class="hero-stamp">Le savoir<br>en mouvement<br>AMASA · RDC</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip" aria-label="Repères de l'académie">
+    <div class="container trust-grid">
+      <div class="trust-item"><div class="trust-icon">⌖</div><div><strong>Une initiative de Kinshasa</strong><span>Une ambition tournée vers les jeunes.</span></div></div>
+      <div class="trust-item"><div class="trust-icon">▤</div><div><strong>Des ressources numériques</strong><span>Livres, guides et supports pratiques.</span></div></div>
+      <div class="trust-item"><div class="trust-icon">↗</div><div><strong>Une approche concrète</strong><span>Comprendre, essayer, apprendre de ses résultats.</span></div></div>
+    </div>
+  </section>
+
+  <section class="section library-section" id="bibliotheque">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">À lire et à explorer</span><h2>La bibliothèque AMASA.</h2><p>Des lectures pour prendre du recul, découvrir des méthodes et avancer avec des outils concrets. Faites défiler les ouvrages pour parcourir la sélection.</p></div>
+      </div>
+      <div class="book-carousel">
+        <button class="round-btn" id="booksPrev" aria-label="Afficher les livres précédents">←</button>
+        <div class="book-track reveal" id="bookTrack" tabindex="0" aria-label="Carrousel de livres, défilement horizontal">
+          <p class="catalog-loading" id="carouselStatus">Chargement des ressources…</p>
+
+        </div>
+        <button class="round-btn" id="booksNext" aria-label="Afficher les livres suivants">→</button>
+      </div>
+      <p class="carousel-hint">Faites glisser les livres avec le doigt ou utilisez les flèches de chaque côté pour parcourir la sélection.</p>
+    </div>
+  </section>
+
+
+  <section class="section" id="academie">
+    <div class="container">
+      <div class="intro-grid reveal">
+        <div>
+          <span class="eyebrow">Qui sommes-nous ?</span>
+          <h2>Une académie qui rapproche le savoir de la vie réelle.</h2>
+        </div>
+        <div class="intro-text">
+          <p>AMASA Academy est une initiative entrepreneuriale éducative numérique basée à Kinshasa. Elle part d'un constat simple : beaucoup de jeunes souhaitent entreprendre, mais ne savent pas toujours quelle première étape choisir, comment évaluer une idée ou comment avancer avec des ressources limitées.</p>
+          <p>Notre réponse consiste à rendre le savoir plus accessible et plus facile à mettre en pratique. Les ressources proposées donnent des repères, des exercices et des méthodes pour aider l'apprenant à réfléchir, prendre des décisions et tester progressivement ses idées.</p>
+          <p>L'objectif est de contribuer à l'émergence d'une jeunesse plus compétente, autonome et entreprenante.</p>
+        </div>
+      </div>
+      <div class="principles reveal">
+        <article class="principle"><b>01</b><h3>Notre mission</h3><p>Démocratiser l'accès au savoir pratique et le rendre applicable dans les réalités quotidiennes.</p></article>
+        <article class="principle"><b>02</b><h3>Notre vision</h3><p>Contribuer à une génération plus autonome, capable de transformer ses connaissances en initiatives concrètes.</p></article>
+        <article class="principle"><b>03</b><h3>Notre engagement</h3><p>Proposer des contenus structurés, accessibles et orientés vers l'action, sans promettre de réussite automatique.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section method-section" id="methode">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Notre approche pédagogique</span><h2>Une progression qui part du réel.</h2><p>Une idée devient plus solide lorsqu'elle est confrontée à un besoin, à des moyens disponibles et à des résultats observables.</p></div>
+        <a class="text-link" href="#guide">Voir le guide de départ <span class="arrow">→</span></a>
+      </div>
+      <div class="method-grid">
+        <article class="method-card reveal"><div class="method-number">01</div><h3>Comprendre le problème</h3><p>Définir clairement la difficulté que l'on souhaite résoudre et identifier les personnes concernées.</p></article>
+        <article class="method-card reveal"><div class="method-number">02</div><h3>Repérer une opportunité</h3><p>Observer son environnement, les besoins existants et les solutions déjà proposées.</p></article>
+        <article class="method-card reveal"><div class="method-number">03</div><h3>Choisir une piste réaliste</h3><p>Comparer plusieurs possibilités en tenant compte de son temps, de son budget et de ses compétences.</p></article>
+        <article class="method-card reveal"><div class="method-number">04</div><h3>Passer à l'action</h3><p>Préparer un premier test simple et limité avant d'engager davantage de ressources.</p></article>
+        <article class="method-card reveal"><div class="method-number">05</div><h3>Mesurer les résultats</h3><p>Observer les retours, les dépenses, les difficultés et les signes qui indiquent si la piste fonctionne.</p></article>
+        <article class="method-card reveal"><div class="method-number">06</div><h3>Corriger et progresser</h3><p>Apprendre de l'expérience, ajuster son approche et décider de la prochaine étape avec plus de recul.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section feature-guide" id="guide">
+    <div class="container guide-grid">
+      <div class="book-stage reveal">
+        <div class="book-shadow"></div>
+        <div class="book-cover" role="img" aria-label="Illustration de couverture du guide Commencer avec presque rien">
+          <span class="cover-top">AMASA ACADEMY · GUIDE PRATIQUE</span>
+          <div class="cover-art"></div>
+          <h3>Commencer avec presque rien</h3>
+          <span class="cover-bottom">OBSERVER · CHOISIR · TESTER</span>
+        </div>
+      </div>
+      <div class="guide-copy reveal">
+        <span class="eyebrow">Le guide à découvrir</span>
+        <h2>Commencer avec presque rien.</h2>
+        <p>Le premier guide d'AMASA Academy s'adresse aux jeunes qui souhaitent lancer une activité, mais qui disposent de moyens limités ou n'ont pas encore trouvé une idée précise. Il aide à faire le point sur ses ressources, à comparer différentes pistes et à tester une idée avant d'investir davantage.</p>
+        <div class="guide-points">
+          <div class="guide-point"><span>✓</span> Faire l'inventaire de ses moyens réels</div>
+          <div class="guide-point"><span>✓</span> Repérer des besoins autour de soi</div>
+          <div class="guide-point"><span>✓</span> Comparer plusieurs idées d'activité</div>
+          <div class="guide-point"><span>✓</span> Préparer un premier test concret</div>
+          <div class="guide-point"><span>✓</span> Utiliser des grilles de décision</div>
+          <div class="guide-point"><span>✓</span> Construire un plan d'action simple</div>
+        </div>
+        <a class="btn" href="#contact">Demander des informations <span class="arrow">↗</span></a>
+        <span class="note">Le prix, le format final et le moyen de commande seront ajoutés par l'équipe AMASA Academy.</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section shop-section" id="boutique">
+    <div class="container">
+      <div class="shop-page-top">
+        <button class="shop-back" id="shopBack" type="button">← Retour au site</button>
+        <span class="eyebrow">AMASA Academy · Boutique</span>
+      </div>
+      <div class="shop-intro-panel">
+        <div><span class="eyebrow">La boutique numérique</span><h2>Des ressources pour faire avancer vos idées.</h2><p>Parcourez les guides et supports proposés par AMASA Academy. Chaque fiche présente le sujet du livre et vous permet de demander les informations de commande à l'équipe.</p></div>
+        <div class="shop-intro-note">Vous avez repéré un guide ? Sélectionnez « En savoir plus » ou contactez l'équipe. Les modalités de commande, le prix et le paiement seront communiqués directement avant toute validation.</div>
+      </div>
+      <div class="shop-top reveal">
+        <div><span class="eyebrow">La boutique numérique</span><h2>Choisissez votre prochaine lecture.</h2><p>Retrouvez les ressources par thématique. Les catégories permettent de repérer plus facilement le contenu adapté à votre besoin.</p></div>
+        <a class="text-link" href="#contact">Une question sur un ouvrage ? <span class="arrow">→</span></a>
+      </div>
+      <div class="shop-controls reveal" role="group" aria-label="Filtrer les ressources par catégorie">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">Tout voir</button>
+        <button class="filter-btn" data-filter="entrepreneuriat" aria-pressed="false">Entrepreneuriat</button>
+        <button class="filter-btn" data-filter="personnel" aria-pressed="false">Développement personnel</button>
+        <button class="filter-btn" data-filter="outils" aria-pressed="false">Outils pratiques</button>
+      </div>
+      <div class="shop-grid" id="shopGrid">
+        <p class="catalog-loading" id="shopStatus">Chargement des ressources…</p>
+      </div>
+      <div class="shop-bottom reveal"><p><strong>Vous cherchez un sujet précis ?</strong><br>Écrivez à l'équipe pour poser une question ou être informé des prochaines ressources.</p><a href="#contact" class="btn">Contacter l'académie <span class="arrow">↗</span></a></div>
+    </div>
+  </section>
+
+  <section class="section audience-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">À qui s'adressent nos ressources ?</span><h2>À celles et ceux qui veulent avancer.</h2><p>Il n'est pas nécessaire d'avoir déjà une entreprise ou un projet parfaitement défini pour commencer à apprendre.</p></div>
+      </div>
+      <div class="audience-grid">
+        <article class="audience-card reveal"><div class="symbol">⌁</div><h3>Les étudiants</h3><p>Pour découvrir des méthodes utiles et apprendre à transformer une idée en démarche concrète.</p></article>
+        <article class="audience-card reveal"><div class="symbol">↗</div><h3>Les jeunes diplômés</h3><p>Pour explorer des pistes d'activité et mieux évaluer les possibilités à leur portée.</p></article>
+        <article class="audience-card reveal"><div class="symbol">◎</div><h3>Les personnes en recherche d'activité</h3><p>Pour identifier des opportunités réalistes et structurer les premières étapes.</p></article>
+        <article class="audience-card reveal"><div class="symbol">＋</div><h3>Les petits entrepreneurs</h3><p>Pour prendre du recul, mieux comprendre leurs clients et améliorer leur manière d'agir.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container learning-grid">
+      <div class="learning-visual reveal">
+        <!-- Remplacez par une photo d'atelier, de lecture ou de travail collectif. -->
+        <div class="image-placeholder">PHOTO APPRENTISSAGE<small>Lecture, atelier, prise de notes ou accompagnement.<br>Format paysage conseillé.</small></div>
+      </div>
+      <div class="learning-copy reveal">
+        <span class="eyebrow">Apprendre autrement</span>
+        <h2>Lire, réfléchir, essayer. Puis recommencer.</h2>
+        <p>Une ressource utile doit pouvoir accompagner une action. C'est pourquoi les contenus AMASA sont pensés autour de questions concrètes et d'étapes que l'apprenant peut adapter à sa situation.</p>
+        <ul class="learning-list">
+          <li><b>01</b><span><strong>Des explications accessibles</strong><br><span class="muted">Pour comprendre les notions sans se perdre dans un vocabulaire compliqué.</span></span></li>
+          <li><b>02</b><span><strong>Des exercices guidés</strong><br><span class="muted">Pour appliquer les idées à son propre contexte.</span></span></li>
+          <li><b>03</b><span><strong>Des outils de décision</strong><br><span class="muted">Pour comparer, organiser et suivre les prochaines étapes.</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section impact-section">
+    <div class="container impact-grid">
+      <div class="impact-copy reveal">
+        <span class="eyebrow">Pourquoi cette initiative compte</span>
+        <h2>Rendre les connaissances plus proches des opportunités.</h2>
+        <p>Quand l'accès au savoir pratique devient plus simple, chacun peut mieux comprendre ses possibilités, faire des choix plus réfléchis et avancer à partir de ses ressources réelles. C'est la contribution qu'AMASA Academy souhaite apporter.</p>
+      </div>
+      <div class="impact-list reveal">
+        <div class="impact-item"><strong>Accès au savoir</strong><span>Des contenus numériques que l'on peut consulter sur différents écrans.</span></div>
+        <div class="impact-item"><strong>Autonomie</strong><span>Des repères pour réfléchir et prendre ses propres décisions.</span></div>
+        <div class="impact-item"><strong>Esprit d'initiative</strong><span>Une démarche qui encourage l'observation et l'expérimentation.</span></div>
+        <div class="impact-item"><strong>Apprentissage continu</strong><span>La possibilité de tirer des leçons de ses essais et de ses erreurs.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section partner-section" id="partenariats">
+    <div class="container">
+      <div class="partner-box reveal">
+        <div>
+          <span class="eyebrow">Partenariats et soutien</span>
+          <h2>Construisons des possibilités d'apprentissage.</h2>
+          <p>AMASA Academy recherche des soutiens pour accélérer le lancement commercial, la production et la diffusion de ses premières ressources. Entreprises, institutions et organisations intéressées peuvent prendre contact afin d'échanger sur les formes de collaboration possibles.</p>
+        </div>
+        <div class="partner-actions">
+          <a class="btn btn-light" href="#contact">Discuter d'un partenariat <span class="arrow">↗</span></a>
+          <small>Chaque proposition sera étudiée selon les besoins et les capacités du projet.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container faq-layout">
+      <div class="faq-intro reveal"><span class="eyebrow">Besoin de précisions ?</span><h2>Questions fréquentes.</h2><p>Quelques réponses pour mieux comprendre l'approche et les ressources d'AMASA Academy.</p></div>
+      <div class="faq-list reveal">
+        <details><summary>AMASA Academy, c'est quoi exactement ?</summary><p>AMASA Academy est une initiative entrepreneuriale éducative numérique basée à Kinshasa. Elle propose des livres numériques, des guides pratiques et des outils d'apprentissage en développement personnel et en entrepreneuriat.</p></details>
+        <details><summary>Faut-il déjà avoir une idée de projet ?</summary><p>Non. La démarche commence par l'observation des besoins et le repérage d'opportunités. Elle aide ensuite à comparer plusieurs pistes avant d'en choisir une.</p></details>
+        <details><summary>Faut-il disposer d'un capital important ?</summary><p>Le premier guide, « Commencer avec presque rien », s'adresse précisément aux personnes qui disposent de moyens limités. Il aide à identifier des activités adaptées à ses ressources et à tester une idée avant d'investir davantage.</p></details>
+        <details><summary>Quels types de ressources sont proposés ?</summary><p>L'offre présentée comprend des livres numériques, des guides pratiques et des outils d'apprentissage : exercices, grilles de décision et plans d'action.</p></details>
+        <details><summary>À qui s'adressent les contenus ?</summary><p>Aux jeunes qui souhaitent gagner en autonomie et développer leur esprit d'entreprise : étudiants, jeunes diplômés, personnes en recherche d'activité ou personnes qui ont déjà une petite activité.</p></details>
+        <details><summary>Comment obtenir le guide « Commencer avec presque rien » ?</summary><p>Contactez l'équipe via le formulaire ci-dessous pour demander les informations disponibles. Le prix, le paiement et la livraison devront être renseignés par AMASA Academy avant la mise en vente en ligne.</p></details>
+        <details><summary>Peut-on soutenir ou accompagner le projet ?</summary><p>Oui. Les entreprises, institutions et organisations qui souhaitent discuter d'un partenariat ou d'un soutien peuvent contacter l'académie.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal">
+        <span class="eyebrow">Entrons en contact</span>
+        <h2>Une question, une idée ou une proposition ?</h2>
+        <p>Vous souhaitez en savoir plus sur un guide, suivre les prochaines ressources ou discuter d'un partenariat ? Envoyez un message à AMASA Academy.</p>
+        <div class="contact-details">
+          <div class="contact-detail"><i>⌖</i><div><strong>Localisation</strong><span>Kinshasa, République démocratique du Congo</span></div></div>
+          <div class="contact-detail"><i>✉</i><div><strong>Adresse e-mail</strong><span>À renseigner par l'équipe AMASA Academy</span></div></div>
+          <div class="contact-detail"><i>◉</i><div><strong>WhatsApp / Téléphone</strong><span>Numéro officiel à ajouter</span></div></div>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="field"><label for="name">Votre nom</label><input id="name" name="name" type="text" placeholder="Nom et prénom" autocomplete="name" required></div>
+          <div class="field"><label for="email">Votre e-mail</label><input id="email" name="email" type="email" placeholder="nom@exemple.com" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="subject">Motif du message</label><select id="subject" name="subject"><option>Demande d'information sur un guide</option><option>Partenariat ou soutien</option><option>Question sur AMASA Academy</option><option>Autre demande</option></select></div>
+        <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Expliquez-nous brièvement votre demande..." required></textarea></div>
+        <button class="btn" type="submit">Préparer mon message <span class="arrow">↗</span></button>
+        <p class="form-note">Ce formulaire prépare un message dans votre application e-mail. Il ne transmet aucune donnée à un serveur depuis cette page.</p>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#accueil"><span class="brand-mark">A</span><span>AMASA<small style="color:rgba(255,255,255,.5)">ACADEMY</small></span></a>
+        <p>Le savoir pratique au service de l'autonomie et de l'esprit d'entreprise. Une initiative éducative numérique basée à Kinshasa.</p>
+      </div>
+      <div class="footer-col"><h4>Explorer</h4><a href="#academie">L'académie</a><a href="#methode">Notre approche</a><a href="#bibliotheque">Bibliothèque</a><a href="#boutique">Boutique</a></div>
+      <div class="footer-col"><h4>Échanger</h4><a href="#partenariats">Partenariats</a><a href="#faq">Questions fréquentes</a><a href="#contact">Nous contacter</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> AMASA Academy. Tous droits réservés.</span><span>Kinshasa · République démocratique du Congo</span></div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./js/config.js"></script>
+<script src="./js/catalog.js" defer></script>
+<script>
+  // Menu mobile : tiroir au premier plan, voile esthétique derrière et fermeture au clic extérieur.
+  const menuBtn = document.getElementById('menuBtn');
+  const mainNav = document.getElementById('mainNav');
+  const menuBackdrop = document.getElementById('menuBackdrop');
+
+  function closeMenu() {
+    mainNav.classList.remove('open');
+    menuBackdrop.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.setAttribute('aria-label', 'Ouvrir le menu');
+    menuBtn.textContent = '☰';
+  }
+  function openMenu() {
+    mainNav.classList.add('open');
+    menuBackdrop.classList.add('open');
+    document.body.classList.add('menu-open');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    menuBtn.setAttribute('aria-label', 'Fermer le menu');
+    menuBtn.textContent = '×';
+  }
+  menuBtn.addEventListener('click', () => {
+    mainNav.classList.contains('open') ? closeMenu() : openMenu();
+  });
+  menuBackdrop.addEventListener('click', closeMenu);
+  document.addEventListener('click', event => {
+    if (!document.body.classList.contains('menu-open')) return;
+    if (mainNav.contains(event.target) || menuBtn.contains(event.target)) return;
+    closeMenu();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+  });
+  mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    closeMenu();
+  }));
+
+  // La boutique s'ouvre comme un espace dédié, sans quitter ce fichier HTML.
+  const shopBack = document.getElementById('shopBack');
+  function openShop(event) {
+    if (event) event.preventDefault();
+    closeMenu();
+    document.body.classList.add('shop-mode');
+    window.scrollTo(0, 0);
+    document.title = 'Boutique — AMASA Academy';
+  }
+  function closeShop() {
+    document.body.classList.remove('shop-mode');
+    document.title = 'AMASA Academy — Le savoir qui vous fait avancer';
+    window.scrollTo(0, 0);
+  }
+  document.querySelectorAll('[data-open-shop]').forEach(link => link.addEventListener('click', openShop));
+  shopBack.addEventListener('click', closeShop);
+  document.querySelectorAll('a[href="#boutique"]:not([data-open-shop])').forEach(link => {
+    link.addEventListener('click', openShop);
+  });
+  // Depuis la boutique, les demandes renvoient vers le formulaire du site principal.
+  document.querySelectorAll('a[href="#contact"]').forEach(link => {
+    link.addEventListener('click', event => {
+      if (!document.body.classList.contains('shop-mode')) return;
+      event.preventDefault();
+      closeShop();
+      window.setTimeout(() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }), 80);
+    });
+  });
+  document.querySelector('.brand').addEventListener('click', event => {
+    if (!document.body.classList.contains('shop-mode')) return;
+    event.preventDefault();
+    closeShop();
+  });
+
+  // Carrousel horizontal en boucle : les flèches latérales reviennent au début ou à la fin.
+  const track = document.getElementById('bookTrack');
+  let carouselBusy = false;
+  function moveBooks(direction) {
+    const card = track.querySelector('.book-card');
+    if (!card || carouselBusy) return;
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 20;
+    const step = card.getBoundingClientRect().width + gap;
+    const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+    const current = track.scrollLeft;
+    let target = current + direction * step;
+    if (direction > 0 && current >= maxScroll - 3) target = 0;
+    else if (direction > 0 && target > maxScroll) target = 0;
+    else if (direction < 0 && current <= 3) target = maxScroll;
+    else if (direction < 0 && target < 0) target = maxScroll;
+    carouselBusy = true;
+    track.scrollTo({ left: target, behavior: 'smooth' });
+    window.setTimeout(() => { carouselBusy = false; }, 480);
+  }
+  document.getElementById('booksPrev').addEventListener('click', () => moveBooks(-1));
+  document.getElementById('booksNext').addEventListener('click', () => moveBooks(1));
+  track.addEventListener('keydown', event => {
+    if (event.key === 'ArrowRight') { event.preventDefault(); moveBooks(1); }
+    if (event.key === 'ArrowLeft') { event.preventDefault(); moveBooks(-1); }
+  });
+
+  // Filtres de la boutique : compatibles avec les fiches chargées depuis books.json.
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  filterButtons.forEach(button => button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    filterButtons.forEach(item => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelectorAll('.shop-card').forEach(card => {
+      card.hidden = filter !== 'all' && card.dataset.category !== filter;
+    });
+  }));
+
+  // Apparition progressive des sections
+  const revealItems = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(item => observer.observe(item));
+  } else {
+    revealItems.forEach(item => item.classList.add('in-view'));
+  }
+
+  // Bouton retour en haut
+  const backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 500), { passive: true });
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Formulaire : ouvre le logiciel de messagerie avec le contenu prérempli.
+  // Remplacez l'adresse ci-dessous par l'adresse officielle avant publication.
+  const ACADEMY_EMAIL = '';
+  const form = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const subject = String(data.get('subject') || 'Message depuis le site AMASA Academy');
+    const message = String(data.get('message') || '').trim();
+    const body = `Nom : ${name}\nE-mail : ${email}\n\n${message}`;
+    if (!ACADEMY_EMAIL) {
+      formStatus.style.display = 'block';
+      formStatus.textContent = "Le formulaire est prêt. Ajoutez l'adresse e-mail officielle dans la variable ACADEMY_EMAIL, en bas du fichier, pour activer l'envoi par messagerie.";
+      return;
+    }
+    window.location.href = `mailto:${ACADEMY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

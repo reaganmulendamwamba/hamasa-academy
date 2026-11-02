@@ -1,0 +1,35 @@
+{
+  "updatedAt": "2026-11-01",
+  "categories": [
+    {
+      "id": "entrepreneuriat",
+      "label": "Entrepreneuriat"
+    },
+    {
+      "id": "personnel",
+      "label": "Développement personnel"
+    },
+    {
+      "id": "outils",
+      "label": "Outils pratiques"
+    }
+  ],
+  "books": [
+    {
+      "id": "commencer-avec-presque-rien",
+      "title": "Commencer avec presque rien",
+      "category": "entrepreneuriat",
+      "categoryLabel": "Entrepreneuriat",
+      "description": "Identifier une activité adaptée à ses ressources et la tester progressivement.",
+      "cover": "",
+      "coverTone": "green",
+      "eyebrow": "AMASA · GUIDE PRATIQUE",
+      "coverSubtitle": "Observer. Choisir. Tester.",
+      "price": "",
+      "priceLabel": "Prix à communiquer",
+      "status": "published",
+      "statusLabel": "Premier guide",
+      "orderLabel": "Détails & commande"
+    }
+  ]
+}
