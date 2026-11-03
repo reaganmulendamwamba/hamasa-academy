@@ -5,18 +5,20 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f6f2",
-  "theme_color": "#243d30",
+  "background_color": "#030B24",
+  "theme_color": "#030B24",
   "icons": [
     {
       "src": "./icons/amasa-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "./icons/amasa-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

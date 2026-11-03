@@ -22,6 +22,8 @@ jobs:
         run: npm install
       - name: Créer le projet Android
         run: npx cap add android
+      - name: Installer les icônes officielles AMASA
+        run: cp -R android-res/. android/app/src/main/res/
       - name: Synchroniser les fichiers web
         run: npx cap sync android
       - name: Compiler l'APK debug

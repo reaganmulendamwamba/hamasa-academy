@@ -68,3 +68,7 @@ Cet APK debug peut être installé et partagé pour test. Il n'est pas encore si
 
 ## Limites
 Pas de backend, de base de données, de comptes ou de paiement automatisé dans cette version. Le catalogue JSON est public : ne mettez aucune donnée privée dedans. Les commandes sont des demandes de contact.
+
+
+## Logo officiel de l’application Android
+Le logo officiel AMASA est déjà intégré dans `android-res/`. Le workflow GitHub Actions copie automatiquement ces ressources Android après la création du projet Capacitor, avant la compilation de l’APK. Le prochain APK généré affichera le logo AMASA comme icône de l’application.
