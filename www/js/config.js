@@ -4,5 +4,5 @@
  * Laissez vide pendant le développement : ./data/books.json sera utilisé.
  */
 window.AMASA_CONFIG = {
-  catalogUrl: 'https://hamasa-academy-www.vercel.app/data/books.json'
+  catalogUrl: ''
 };
